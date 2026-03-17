@@ -3,6 +3,5 @@ Odin Project using data structures topics:
 * linked lists
 * hash maps
 * binary search trees
-* BFS and DFS 
 
 Coding in Python, Java, JavaScript
