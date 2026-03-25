@@ -27,8 +27,7 @@ const recfib = (input, fibArray = [0, 1]) => {
   const nextNum = fibArray[fibArray.length - 1] + fibArray[fibArray.length - 2];
   fibArray.push(nextNum);
 
-  // figure out how to return the array once instead of getting it once, and then the rest being undefined
-  return console.log("Recursive fib: " + recfib(input, fibArray));
+  return recfib(input, fibArray);
 };
 
-recfib(8);
+console.log("Recursive fib: " + recfib(8));
