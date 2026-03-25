@@ -13,12 +13,12 @@ function fib(input) {
     num1 = num2;
     num2 = nextNum;
   }
-  console.log(fibArray);
+  console.log("Non-recursive fib: " + fibArray);
 }
 fib(8);
 
 // recursive function
-const fib = (input, fibArray = [0, 1]) => {
+const recfib = (input, fibArray = [0, 1]) => {
   // base case, slice extra indexes
   if (fibArray.length >= input) {
     return fibArray.slice(0, input);
@@ -27,7 +27,8 @@ const fib = (input, fibArray = [0, 1]) => {
   const nextNum = fibArray[fibArray.length - 1] + fibArray[fibArray.length - 2];
   fibArray.push(nextNum);
 
-  return fib(input, fibArray);
+  // figure out how to return the array once instead of getting it once, and then the rest being undefined
+  return console.log("Recursive fib: " + recfib(input, fibArray));
 };
 
-console.log(fib(8));
+recfib(8);
