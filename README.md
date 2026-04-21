@@ -1,5 +1,5 @@
 Odin Project using data structures topics:
-* recurison
+* recurison (done)
 * linked lists
 * hash maps
 * binary search trees
